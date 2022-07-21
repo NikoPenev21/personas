@@ -1,0 +1,12 @@
+<div class="card-wrapper -sf-m-2xs">
+  <div class="title -sf-pb-l">{{persona.personaRole}}</div>
+
+  <div *ngIf="persona.avatar!==''; then content else other_content"></div>
+    <ng-template #content><img id="u96_img" class="img -sf-centered-box" src="{{persona.avatar}}" tabindex="0" style="outline: none;"></ng-template>
+    <ng-template #other_content><div style="text-align:center"><i class="sf-fa sf-fa-user sf-icon -illustrative "></i></div></ng-template>
+
+  <div class="number">{{persona.numberOfVisits}}</div>
+  <div class="text-minor"><span class="number-minor">{{persona.percentage}}</span> of all visitors <div class="">{{persona.percentageAllTime}} for all time</div></div>
+  <div style="text-align:center"><a class="-sf-centered-box" href="#">view persona</a></div>
+</div>
+

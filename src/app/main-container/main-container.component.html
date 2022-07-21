@@ -1,0 +1,71 @@
+<div class="-sf-mb-l">
+
+<div class="sf-row top-section">
+  <h1>Personas</h1>
+  <div class="buttons-wrapper">
+    <div class="buttons">
+      <button class="sf-button" (click)="printMessage($event)">Edit persona scoring</button>
+      <button class="sf-button -action" (click)="printMessage($event)">Define a persona</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="sf-row">
+  <div class="sf-row__col -col-4">
+    <a (click)="open()" class="sf-button -no-border -left -icon -dropdown -dropped">
+        <span id="value">Last 30 days</span>
+        <i class="sf-button__icon sf-icon sf-fa sf-fa-caret-down -size-xs -sf-pt-7xs -sf-ml-6xs"></i>
+        <div [ngClass]="[selectClosed]" (click)="select($event)" class="sf-button__dropdown">
+            <div class="sf-dropdown">
+                 <div class="sf-dropdown__item" [ngClass]="{'-active': id === 1 }" (click)="addClass(1)">
+                    Last week
+                 </div>
+                 <div class="sf-dropdown__item" [ngClass]="{'-active': id === 2 }" (click)="addClass(2)">
+                  Last 7 days
+               </div>
+                 <div class="sf-dropdown__item" [ngClass]="{'-active': id === 3 }" (click)="addClass(3)">
+                  Last 30 days
+                </div>
+                 <div class="sf-dropdown__item" [ngClass]="{'-active': id === 4 }" (click)="addClass(4)">
+                  Last 3 months
+               </div>
+               <div class="sf-dropdown__item" [ngClass]="{'-active': id === 5 }" (click)="addClass(5)">
+                Last 6 months
+             </div>
+            </div>
+       </div>
+    </a>
+  </div>
+</div>
+</div>
+
+<div class="-sf-border-bottom -sf-border-lighter -sf-mb-m"></div>
+
+  <ul class="cards-wrapper -list-style-none">
+    <li class="card-wrapper -sf-m-2xs">
+      <div class="title -sf-pb-4xs ">Recognized as personas</div>
+      <div class="-sf-mt-5xs" style="text-align:center"><i class="personas-icon sf-fa sf-fa-users sf-icon -illustrative"></i></div>
+
+      <div class="number">394</div>
+      <div class="text-minor">out of <span class="number-minor">33,657</span> visitors <span class="number-minor">11,435</span> for all time</div>
+    </li>
+    <div class="-sf-border-right -sf-border-lighter"></div>
+    <li *ngFor='let persona of personas;'>
+      <app-persona [persona]="persona"></app-persona>
+    </li>
+  </ul>
+  <div class="-sf-border-bottom -sf-border-lighter -sf-mt-s"></div>
+
+  <div id="chart"></div>
+
+  <img class="chart-image -sf-mt-xl - 40x -sf-mb-xl - 40x" src="../../assets/chart1.png" tabindex="0" style="outline: none;">
+
+  <div class="-sf-border-bottom -sf-border-lighter -sf-mt-s"></div>
+
+  <img class="chart-image -sf-mt-xl - 40x" src="../../assets/chart2.png" tabindex="0" style="outline: none;">
+
+
+
+
+

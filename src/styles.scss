@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("../node_modules/@progress/sitefinity-component-framework/styles/dist/sitefinity/css/main.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden !important;
+}
+

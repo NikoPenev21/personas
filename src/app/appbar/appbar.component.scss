@@ -1,0 +1,46 @@
+@import "../../utilities.scss";
+
+.select-default {
+  display: none;
+}
+
+.select-open {
+  display: inline;
+}
+
+#value {
+  @include font();
+}
+
+.toolbar {
+  justify-content: space-between;
+  .progress-logo {
+    width: 46px;
+    padding: 11px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  .toolbar-avatar {
+    width: 36px;
+    height: 36px;
+    margin-top: 5px
+  }
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  span {
+    @include font();
+    font-size: 15px;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+    margin-bottom: 4px
+  }
+
+  i {
+    color: #CCCCCC;
+  }
+}

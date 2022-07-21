@@ -1,0 +1,34 @@
+<div class="toolbar sf-row" role="banner">
+  <div style="display: flex;">
+    <img class="progress-logo" src="https://ux.sitefinity.com/DEC-iris_design/images/dashboard/u124.png" tabindex="0" style="outline: none;">
+    <div class="-sf-border-right -sf-border-lighter"></div>
+
+    <div class="dropdown -sf-ml-2xs">
+        <a (click)="open()" class="sf-button -no-border -left -icon -dropdown -dropped">
+            <span class="-sf-m-5xs">Acme</span>
+            <i class="sf-button__icon sf-icon sf-fa sf-fa-caret-down -size-xs -sf-ml-2xs"></i>
+            <div [ngClass]="[selectClosed]" class="sf-button__dropdown">
+                <div class="sf-dropdown">
+                     <div class="sf-dropdown__item">
+                        Acme
+                     </div>
+                     <div class="sf-dropdown__item">
+                      Supersonic
+                    </div>
+                     <div class="sf-dropdown__item -active">
+                      Spidert
+                   </div>
+                </div>
+           </div>
+        </a>
+    </div>
+  </div>
+
+    <div class="sf-top-toolbar" style="position: static;">
+      <span tabindex="0" class="sf-link -top-toolbar -active">Analytics</span><br>
+      <span tabindex="0" class="sf-link -top-toolbar">Administration</span><br>
+      <span class="-sf-ml-xl -sf-mr-xl">
+        <img id="u47_img" class="toolbar-avatar" src="https://ux.sitefinity.com/DEC-iris_design/images/dashboard/u131.png" tabindex="0" style="outline: none;">
+      </span>
+    </div>
+</div>

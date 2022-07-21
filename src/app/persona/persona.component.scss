@@ -1,0 +1,38 @@
+.card-wrapper {
+  width: 170px;
+  .title {
+    font-size: 20px;
+    font-weight: 300;
+    color: #757575;
+    text-align: center;
+  }
+  img {
+    display: block;
+    cursor: pointer;
+  }
+
+  .sf-icon {
+    cursor: pointer;
+    background-color: #DCECF5;
+    color: white;
+    width: 67px;
+  height: 67px;
+  }
+  .number {
+    text-align: center;
+    font-family: 'Open Sans Condensed';
+    font-size: 45px;
+    color: #333333;
+  }
+  .number-minor {
+    font-family: 'Open Sans Condensed';
+    font-size: 20px;
+    color: #333333;
+    line-height: normal;
+  }
+  .text-minor {
+    text-align: center;
+    font-size: 13px;
+    color: #999999;
+  }
+}

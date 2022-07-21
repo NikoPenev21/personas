@@ -1,0 +1,77 @@
+h1 {
+  font-size: 64px;
+  color: #333333;
+  line-height: 88px;
+}
+
+.top-section {
+  margin-top: 25px;
+  justify-content: space-between;
+  .buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .buttons {
+    margin-top: 15px;
+  }
+  .sf-button {
+    i {
+      color: #333333;
+    }
+  }
+}
+
+.select-default {
+  display: none;
+}
+
+.select-open {
+  display: inline;
+}
+
+.cards-wrapper {
+  display: flex;
+  .card-wrapper {
+    width: 170px;
+    min-width: 140px;
+    .number {
+      text-align: center;
+      font-family: 'Open Sans Condensed';
+      font-size: 45px;
+      line-height: normal;
+    }
+    .personas-icon {
+      cursor: pointer;
+      background-color: #DCECF5;
+      color: white;
+      width: 67px;
+      height: 67px;
+    }
+    .text-minor {
+      text-align: center;
+      color: #999999;
+      .number-minor {
+        color: #333333;
+      }
+    }
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 300;
+  color: #757575;
+  text-align: center;
+}
+
+ul {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.chart-image {
+  max-width: 1228px;
+  width: 100%;
+}
+

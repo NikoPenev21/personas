@@ -1,0 +1,15 @@
+
+.sidebar-container {
+  height: 100%;
+  padding: 60px 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .sectionTitle {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .sf-link {
+    line-height: normal;
+  }
+}
